@@ -6,7 +6,6 @@ class Solution:
         if num != 0: digits = math.ceil(math.log(num,10))
         if num < 10: return num
         for i in range(0, digits+1):
-            print(num)
             total += num%10
             num = num//10  
         return self.addDigits(total)
